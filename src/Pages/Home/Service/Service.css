@@ -1,0 +1,24 @@
+.service {
+    box-shadow: 10px 10px 10px rgb(201, 195, 195);
+    padding: 20px;
+
+}
+
+.tttt {
+    text-align: center;
+    background-color: rgb(40, 150, 38);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.tttt:hover {
+    background-color: darkgreen;
+}
+
+.ff {
+    text-align: center;
+
+}
