@@ -19,7 +19,7 @@ const Experts = () => {
     return (
         <div >
             <h1 className='mt-5 text-center text-primary'>OUR EXPERTS</h1>
-            <div className='row row-cols-1 row-cols-md-3 g-4 mt-3 rounded mx-auto'>
+            <div id='experts' className='row row-cols-1 row-cols-md-3 g-4 mt-3 rounded mx-auto'>
                 {
                     workers.map(w => <Expert
                         key={w.id}

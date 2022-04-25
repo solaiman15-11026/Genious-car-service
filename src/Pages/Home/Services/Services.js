@@ -18,7 +18,7 @@ const Services = () => {
 
             <h1 className='tt' style={{ color: ' red' }}>OUR SERVICE</h1>
 
-            <div className='services-container'>
+            <div id='services' className='services-container'>
                 {
                     service.map(s => <Service
                         s={s}
