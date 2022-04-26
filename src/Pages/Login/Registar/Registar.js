@@ -35,6 +35,8 @@ const Registar = () => {
                 <input type="email" name="email" id="" placeholder='Email Address' required />
 
                 <input type="password" name="password" id="" placeholder='Password' required />
+                <input type="checkbox" name="terms" id="terms" />
+                <label className='mb-2 px-2' htmlFor="terms">Accept teams and conditions</label> <br />
                 <input className='tttt' type="submit" value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
