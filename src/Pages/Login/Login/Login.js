@@ -50,14 +50,12 @@ const Login = () => {
                     <Form.Label >Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Login
                 </Button>
 
                 <p className='mt-3'>new user here ? <span className='text-primary'><Link to={'/registar'}>create a account</Link> </span> </p>
+                <p className='mt-3'>Forget password ? <span className='text-primary'><Link to={'/registar'}>reset password</Link> </span> </p>
                 <Sociallogin></Sociallogin>
             </Form>
 
