@@ -21,9 +21,10 @@ const RequireAuth = ({ children }) => {
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
+    console.log(user)
 
     //email veri
-    if (!user.emailVerified) {
+    if (user.providerData[0]?.providerId === 'password' && !user.emailVerified) {
         return <div>
             <h5>Email verify please!</h5>
             <button onClick={async () => { await sendEmailVerification(); toast('Sent email'); }}>Verify email</button>
