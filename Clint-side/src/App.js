@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login/Login';
 import Registar from './Pages/Login/Registar/Registar'
 import CheackOut from './Pages/CheackOut/CheackOut/CheackOut';
 import RequiredAuth from './Pages/Login/RequiredAuth/RequiredAuth';
+import Addservice from './Pages/Addservice/Addservice';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <Route path='/registar' element={<Registar></Registar>}></Route>
         <Route path='/cheackout' element={
           <RequiredAuth> <CheackOut></CheackOut></RequiredAuth>
+        }></Route>
+        <Route path='/addservice' element={
+          <RequiredAuth> <Addservice></Addservice></RequiredAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
