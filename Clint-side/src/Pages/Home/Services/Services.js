@@ -7,7 +7,7 @@ const Services = () => {
     const [service, setService] = useState([])
 
     useEffect(() => {
-        fetch('Services.json')
+        fetch('http://localhost:5000/service')
             .then(response => response.json())
             .then(data => setService(data))
     }, [])
@@ -22,7 +22,7 @@ const Services = () => {
                 {
                     service.map(s => <Service
                         s={s}
-                        key={s.id}
+                        key={s._id}
 
                     ></Service>)
                 }
